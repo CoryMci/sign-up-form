@@ -1,15 +1,22 @@
+@font-face {
+    font-family: my-cool-font;
+    src: url(Norse-Bold.otf);
+  }
+
 body {
     display:flex;
     align-items: center;
     justify-content: center;
     height:100vh;
     margin: 0px;
+    background-color: black;
+    font-family: roboto;
 }
 
-.content {
+.left {
     height: 80vh;
     width: 80vw;
-    background-color:rgb(144, 144, 218);
+    background-color:white;
     display:flex;
 }
 
@@ -42,9 +49,57 @@ img.background {
 
 .banner-text {
     font-size: 64px;
+    font-family: my-cool-font;
     color: white;
 }
 
-.form {
+.right {
     width: 55vw;
+}
+
+.right .container {
+    padding: 5vw;
+    padding-top: 10vw;
+    display:flex;
+    flex-direction: column;
+    gap:10vh;
+}
+
+.header {
+    font-size: 32px;
+    font-weight: 700;
+}
+
+button, input, select, textarea {
+    font-family: inherit;
+    width: 20rem;
+    height: 1.5rem;
+    font-size: 100%;
+  }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    margin-top: 32px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap:16px;
+}
+
+li {
+    width: 400px;
+    display:flex;
+    flex-direction: column;
+}
+
+label {
+    font-size: 12px;
+    letter-spacing: .05rem;
+    font-weight: bold;
+    color: rgb(44, 44, 44);
+}
+
+button {
+    margin-top: 32px;
 }
