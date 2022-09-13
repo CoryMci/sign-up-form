@@ -55,14 +55,15 @@ img.background {
 
 .right {
     width: 55vw;
+    height:80vh;
 }
 
 .right .container {
-    padding: 5vw;
-    padding-top: 10vw;
+    height:90%;
+    padding:10%;
     display:flex;
     flex-direction: column;
-    gap:10vh;
+    justify-content: space-around;
 }
 
 .header {
@@ -102,4 +103,40 @@ label {
 
 button {
     margin-top: 32px;
+    height: 3vh;
+    background-color: rgb(81, 152, 219);
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: none;
+}
+
+button:hover {
+    background-color: rgb(81, 152, 163);
+}
+
+input {
+    border-radius: 5px;
+    border: 1px solid rgb(151, 151, 151);
+}
+
+input:focus {
+    border: 1px solid rgb(0, 255, 55);
+    outline: none;
+    box-shadow: 1px 1px 3px rgb(182, 182, 182);
+}
+
+input:not(:placeholder-shown):invalid {
+    border: 1px solid rgb(255, 0, 0);
+}
+
+input:focus:invalid {
+    border: 1px solid red;
+}
+
+.login a{
+    color: rgb(81, 152, 163);
+    font-weight: 700;
+    text-decoration: none;
 }

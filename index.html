@@ -26,32 +26,32 @@
                 <ul>
                     <li>
                         <label for="user-first">FIRST NAME</label>
-                        <input type="text" id="user-first">
+                        <input type="text" id="user-first" placeholder=" " pattern="[a-zA-Z]+" required>
                     </li>
                     <li>
                         <label for="user-last">LAST NAME</label>
-                        <input type="text" id="user-last">
+                        <input type="text" id="user-last" placeholder=" " pattern="[a-zA-Z]+" required>
                     </li>
                     <li>
                         <label for="user-email">EMAIL</label>
-                        <input type="email" id="user-email">
+                        <input type="email" id="user-email" placeholder=" " required>
                     </li>
                     <li>
                         <label for="user-phone">PHONE NUMBER</label>
-                        <input type="tel" id="user-phone">
+                        <input type="tel" id="user-phone" placeholder=" " required>
                     </li>
                     <li>
                         <label for="user-pw">PASSWORD</label>
-                        <input type="password" id="user-pw">
+                        <input type="password" id="user-pw" placeholder=" " pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
                     </li>
                     <li>
                         <label for="user-pw">CONFIRM PASSWORD</label>
-                        <input type="password" id="user-pw-confirm">
+                        <input type="password" id="user-pw-confirm" placeholder=" " pattern="(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
                     </li>
                 </ul>
                 <button type="submit">Create Account</button>
             </form>
-            <div class="login">Already have an account? <em href="http://www.google.com">Log In</em>.</div>
+            <div class="login">Already have an account? <em><a href="http://www.google.com">Log In</a></em>.</div>
             </div>
         </div>
     </div>
